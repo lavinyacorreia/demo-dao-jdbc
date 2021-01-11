@@ -18,10 +18,10 @@ public class Project {
 	
 		System.out.println("Seller findById");
 		SellerDao sellerDao = DaoFactory.createSellerDao();
-		
 		Seller seller = sellerDao.findById(3);
-		
 		System.out.println(seller);
+		
+		
 		System.out.println("Seller findByDepartment");
 		Department department = new Department(2, null);
 		List<Seller> list = sellerDao.findByDepartment(department);
